@@ -1,50 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+
+- Version change: 0.1.0 -> 0.2.0
+- Modified principles:
+	- Simplified: Removed release management and complex versioning guidance
+	- Removed: "Contracts & Integration Testing" (moved to optional best practice)
+	- Removed: "Observability & Semantic Versioning" (simplified to basic logging)
+- Removed sections: Observability & Semantic Versioning, Development Workflow (complex PR requirements)
+- Templates updated: `.specify/templates/plan-template.md` ✅ updated
+- Templates checked: `.specify/templates/spec-template.md` ✅ no change needed
+	`.specify/templates/tasks-template.md` ✅ no change needed
+- Follow-ups: none
+-->
+
+# Movie Watchlist Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Simplicity & Beginner-Friendly
+Write code that is easy to understand and maintain. Avoid complex patterns or
+over-engineering. Keep projects small and focused on solving one problem well.
+Rationale: Makes it easy for beginners to learn and contribute.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Modular Code
+Organize code into small, focused modules with clear purposes. Each module should
+do one thing well and be easy to test independently.
+Rationale: Keeps code manageable and makes testing straightforward.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Test-First (Non-Negotiable)
+Write tests before implementing features. Tests should verify that code works
+correctly and make refactoring safe.
+Rationale: Catches bugs early and documents expected behavior.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Clear Communication
+Write clear comments and docstrings. Explain the "why" behind design decisions.
+Rationale: Helps beginners understand code and reduces friction when working together.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Project Scope
+This is a small, beginner-friendly project. Technology choices favor simplicity
+and clarity (e.g., SQLite for storage, minimal infrastructure). The focus is on
+learning and delivering working features, not production-grade reliability.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Code Contribution Guidelines
+- Keep changes small and focused on one feature or fix.
+- Write tests for new functionality.
+- Add comments explaining non-obvious logic.
+- Ensure code passes local tests before submitting changes.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution is a living document. Propose changes by discussing them with
+the core team. Changes that add or remove principles require team agreement.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 0.2.0 | **Ratified**: 2025-11-14 | **Last Amended**: 2025-11-17

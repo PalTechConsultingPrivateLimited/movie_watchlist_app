@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+The implementation plan MUST validate alignment with the project constitution:
+
+- Simplicity: Does the design solve one problem well without over-engineering?
+- Modularity: Are components split into independent, testable modules?
+- Testing: Are there clear test cases for the feature?
+- Communication: Is the design documented with clear explanations?
 
 ## Project Structure
 
